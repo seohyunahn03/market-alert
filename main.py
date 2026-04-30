@@ -5,7 +5,7 @@ from datetime import datetime
 import pytz
 
 # 🚨 여기에 본인의 ntfy 채널명을 다시 적어주세요! 
-NTFY_CHANNEL = "taehwan_vix_alert_2026" 
+NTFY_CHANNEL = taehwan_vix_alert_2026
 
 def get_market_data():
     vix = yf.Ticker("^VIX").history(period="1d")['Close'].iloc[-1]
