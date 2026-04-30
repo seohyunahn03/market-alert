@@ -31,9 +31,9 @@ def main():
     tz = pytz.timezone('Asia/Seoul')
     now = datetime.now(tz)
     
-    if now.hour == 8:
+    if True: 
         msg = f"오늘의 장 시작 전 요약입니다.\nVIX: {vix}\n공포탐욕: {fng_score} ({fng_rating})"
-        send_push("🌅 아침 증시 브리핑", msg, tags="sunrise")
+        send_push("테스트: 증시 브리핑", msg, tags="sunrise")
         
     if vix >= 30.0 or fng_score <= 25:
         msg = f"🚨 시장 변동성 경고!\nVIX: {vix}\n공포탐욕: {fng_score} ({fng_rating})"
